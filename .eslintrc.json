@@ -32,6 +32,18 @@
       "import/no-unresolved": "off",
       "import/prefer-default-export": "off",
       "import/no-extraneous-dependencies": "off",
-      "jsx-quotes": "off"
+      "jsx-quotes": "off",
+      "jsx-a11y/alt-text": "off",
+      "@next/next/no-img-element": "off",
+      "jsx-a11y/label-has-associated-control": "off",
+      "react/button-has-type": "off",
+      "react/jsx-props-no-spreading": "off",
+      "no-alert": "off",
+      "jsx-a11y/click-events-have-key-events": "off",
+      "jsx-a11y/no-noninteractive-element-interactions": "off",
+      "no-shadow": "off",
+      "react/jsx-no-useless-fragment": "off",
+      "no-useless-return": "off",
+      "no-console": "off"
     }
 }
