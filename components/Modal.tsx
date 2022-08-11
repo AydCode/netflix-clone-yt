@@ -1,5 +1,4 @@
 import {
-  CheckIcon,
   PlusIcon, ThumbUpIcon, VolumeOffIcon, VolumeUpIcon, XIcon,
 } from '@heroicons/react/outline'
 import MuiModal from '@mui/material/Modal'
@@ -15,7 +14,6 @@ function Modal() {
   const [movie, setMovie] = useRecoilState(movieState)
   const [trailer, setTrailer] = useState('')
   const [genres, setGenres] = useState<Genre[]>([])
-  const [addedToList, setAddedToList] = useState(false)
   const [muted, setMuted] = useState(true)
 
   console.log(movie)
@@ -82,12 +80,8 @@ function Modal() {
                 Play
               </button>
 
-              <button className='modalButton' onClick={handleList}>
-                {addedToList ? (
-                  <CheckIcon className='h-7 w-7' />
-                ) : (
-                  <PlusIcon className='h-7 w-7' />
-                )}
+              <button className='modalButton'>
+                <PlusIcon className='h-7 w-7' />
               </button>
 
               <button className='modalButton'>
